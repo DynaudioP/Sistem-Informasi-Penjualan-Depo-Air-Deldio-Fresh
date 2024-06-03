@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('clash-display.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #57a0ff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #47b9ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #2e7eff;
+}
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+  border: 7px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #d6d6d6;
+}
+::-webkit-scrollbar-track:active {
+  background: #d6d6d6;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.navbar-nav li a {
+    transition: all .2s ease-in-out; 
+}
+
+.navbar-nav li a:hover {
+    color: #62A7D8;
+    transform: scale(1.02);
+}
+
+.navbar-nav .nav-link.active {
+  color: #62A7D8;
+}
+
+.brand-logo{
+    width: 50px;
+    transform: scale(1.25);
+}
+
+/* Konten Box Tambah(Transaksi/Pelanggan) */
+
+.box-top {
+    margin-bottom: 1.5px;
+    gap: 0.3em;
+}
+
+.box-top p {
+    font-size: 14px;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    margin: 0;
+}
+
+.transaksi_switch_btn:hover {
+    background-color: #0474C4;
+    color: #ffff;
+}
+
+.box-top-left {
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+}
+
+.box-top-right {
+    
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+}
+
+.box-bottom {
+    margin: 0px 7px 0px 7px;
+    font-size: 14px;
+    padding-top: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+}
+.box-bottom-bottom-left{
+    width: 100%;
+}
+
+.box-bottom-bottom-left select{
+    margin-bottom: 20px;
+}
+
+.transaksi_switch_btn {
+    background-color: #62A7D8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffff;
+    transition: all .2s ease-in-out; 
+}
+
+/* Lihat Transaksi */
+
+@media (max-width : 768px){
+  .tr-date {
+    width: 7em;
+  }
+  .date-filter{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .export-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width : 480px){
+  .tr-date {
+    width: 7em;
+  }
+}
+
+@media (max-width : 384px){
+  .tr-date {
+    margin-bottom: 0.5em;
+  }
+}
+
+
+/* Konten Box Only Tambah Transaksi */
+#preview {
+    transform: rotate(90deg);;
+}
+
+
+
+/* Konten Box Only Tambah Transaksi(Member with QR) */
+.box-switch-tambah img { 
+    transition: all .2s ease-in-out; 
+}
+
+
+.box-switch-tambah img:hover {
+    transform: scale(1.1);
+}
+
+/* Konten Box Only Tambah Pelanggan */
+.box-bottom-bottom-left input {
+    margin-bottom: 1em;
+    padding-right: 3.2em;
+    padding-left: 0.25em;
+}
+
+/* Lihat Kupon */
+
+.table-kupon{
+    margin: 1em 0em 0em 0em;
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap
+}
+
+.coupon {
+    width: 320px;
+    height: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+    display: flex;
+    align-items: stretch;
+    color: #000;
+  }
+  
+  .coupon::before,
+  .coupon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .coupon::before {
+    left: 0;
+    background-image: radial-gradient(circle at 0 50%, transparent 25px, rgb(16, 163, 221) 26px);
+  }
+  
+  .coupon::after {
+    right: 0;
+    background-image: radial-gradient(circle at 0 0, transparent 0px, rgb(16, 163, 221) 0px);
+  }
+  
+  .coupon > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    width: 80px;
+    border-right: 2px dashed rgba(0, 0, 0, 0.15);
+  }
+  
+  .left div {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .right {
+    width: 120px;
+    background-image: radial-gradient(circle at 100% 50%, transparent 25px, #fff 26px);
+  }
+  
+  .right div {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 2.5rem;
+    transform: rotate(-90deg);
+  }
+  
+  
+  .center h2 {
+    font-weight: bold;
+    background-color: #fff;
+    color: rgb(16, 163, 221);
+    padding: 1.5px 3px;
+    border-radius: 5px;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    white-space: nowrap;
+  }
+  
+  .center h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+  }
+  
+  .center small {
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .kanan {
+    align-self: start; 
+    padding: 1em;
+  }
+
+  .edit_icon {
+    width: 20px;
+    color: white;
+  }
+
+  .edit_icon {
+    width: 20px;
+  }
+
+  .edit_icon {
+    width: 20px;
+    transition: transform 0.25s;
+  }
+  .edit_icon:hover {
+    cursor: pointer;
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  
+
+  @media only screen and (max-width: 480px) {
+    .left{
+        display: none !important;
+    }
+    
+    .kanan {
+        padding: 0em;
+        margin: 0.5em 0.5em 0em 0em;
+    }
+
+    .center div {
+        transform: rotate(-90deg);
+        height: 1em;
+    }
+    
+  }
+
+/* End Lihat Kupon */
+
+/* Print Kupon */
+
+.wrap-print{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 67px;
+}
+
+.wrap-kupon{
+  transform: rotate(90deg);
+  width: 315px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/kupon.png");
+}
+
+/* End Print Kupon */
+
+
+/* Landing Page */
+
+.hero1{
+  font-family: 'ClashDisplay', sans-serif;
+}
+
+/* Water text */
+
+.cons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cons h1{
+  position: absolute;
+  color: #fff;
+  transform: translate(0%, -35%);
+
+}
+
+.cons h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #0474C4;
+}
+
+.cons h1:nth-child(2) {
+  color: #03a8f4f3;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@media (min-width : 993px) {
+
+@keyframes animate {
+  0%,100%{
+    clip-path: polygon(0 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+}
+
+@media (max-width : 992px) {
+  .cons h1 {
+    color: #fff;
+  }
+  .cons h1:nth-child(1) {
+    color: #fff;
+
+  }
+  
+  .cons h1:nth-child(2) {
+    color: #fff;
+  }
+}
+
+/* water text end */
+
+#hero {
+  background: linear-gradient(rgba(19, 33, 52, 0.463), rgba(2, 103, 255, 0.438)), url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title .line {
+  width: 70px;
+  height: 4px;
+  background-color: #0474C4;
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  
+}
+
+#counter {
+  background: linear-gradient(to bottom, #0474C4 80%, #fff 0%);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  
+}
+
+img.framed {
+  box-shadow: -50px -50px 0 -40px rgb(0, 145, 255), 50px 50px 0 -40px #198cff;
+}
+
+/* button */
+
+
+.button-66 {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  
+}
+
+.button-66:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+/* wave bg */
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.contents {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* /* Shrinking for mobile */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .contents {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* gallery */
+
+.section-gallery {
+  padding-bottom: 140px;
+}
+
+.row .img-gal img{
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.row .img-gal:hover img{
+  transform: scale(1.01);
+}
+
+/* footer */
+
+footer {
+  background-color: #198cff;
+  color: #fff;
+}
+
+
